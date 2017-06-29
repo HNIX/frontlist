@@ -5,6 +5,16 @@ GIT
     font_assets (0.1.13)
       rack
 
+GIT
+  remote: git://github.com/spree-contrib/spree_digital.git
+  revision: 2c6c03c78c86b2b2c1251be3b84864bc536ec1d4
+  specs:
+    spree_digital (3.2.0.alpha)
+      spree_api (>= 3.1.0, < 4.0)
+      spree_backend (>= 3.1.0, < 4.0)
+      spree_core (>= 3.1.0, < 4.0)
+      spree_frontend
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -524,6 +534,7 @@ DEPENDENCIES
   sidekiq
   spree (~> 3.2.1)
   spree_auth_devise (~> 3.2.0.beta)
+  spree_digital!
   spree_gateway (~> 3.2.0.beta)
   spring
   spring-commands-rspec
@@ -536,4 +547,4 @@ RUBY VERSION
    ruby 2.3.1p112
 
 BUNDLED WITH
-   1.14.6
+   1.15.1

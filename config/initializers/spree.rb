@@ -16,6 +16,9 @@ Spree.config do |config|
   config.layout = 'application_classic'
   config.logo   = 'spark-logo.png'
   config.admin_interface_logo = 'spark-logo.png'
+
 end
+
+
 
 Spree.user_class = 'Spree::User'
