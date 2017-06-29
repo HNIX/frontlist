@@ -15,6 +15,16 @@ GIT
       spree_core (>= 3.1.0, < 4.0)
       spree_frontend
 
+GIT
+  remote: git://github.com/spree-contrib/spree_editor.git
+  revision: 1966d3c87754aeb07e9d5543dd3d17e4e0754dfb
+  specs:
+    spree_editor (3.2.0.alpha)
+      ckeditor (~> 4.2.0)
+      spree_backend (>= 3.1.0, < 4.0)
+      spree_core (>= 3.1.0, < 4.0)
+      tinymce-rails (~> 4.2.5)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -118,6 +128,9 @@ GEM
       activesupport (>= 3.0.0)
     case_transform (0.2)
       activesupport
+    ckeditor (4.2.4)
+      cocaine
+      orm_adapter (~> 0.5.0)
     cldr-plurals-runtime-rb (1.0.1)
     climate_control (0.1.0)
     cocaine (0.5.8)
@@ -455,6 +468,8 @@ GEM
     thor (0.19.4)
     thread_safe (0.3.6)
     tilt (2.0.6)
+    tinymce-rails (4.2.8)
+      railties (>= 3.1.1)
     twitter_cldr (3.6.0)
       camertron-eprun
       cldr-plurals-runtime-rb (~> 1.0)
@@ -535,6 +550,7 @@ DEPENDENCIES
   spree (~> 3.2.1)
   spree_auth_devise (~> 3.2.0.beta)
   spree_digital!
+  spree_editor!
   spree_gateway (~> 3.2.0.beta)
   spring
   spring-commands-rspec

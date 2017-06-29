@@ -11,6 +11,7 @@ Rails.application.config.assets.precompile += %w(*.svg *.eot *.woff *.ttf *.gif 
 Rails.application.config.assets.paths << Rails.root.join('client', 'img')
 Rails.application.config.assets.paths << Rails.root.join('client', 'fonts')
 Rails.application.config.assets.paths << Rails.root.join('client', 'css')
+Rails.application.config.assets.precompile += %w( ckeditor/*)
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.

@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
   # Spree routes
   mount Spree::Core::Engine, at: '/'
 
   Spree::Core::Engine.routes.draw do
+  mount Ckeditor::Engine => '/ckeditor'
     get '/account_link' => 'store#account_link'
     get '/authenticity_token' => 'store#authenticity_token'
   end

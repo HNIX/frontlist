@@ -98,3 +98,4 @@ gem 'spree_gateway', '~> 3.2.0.beta'
 gem 'spree_auth_devise', '~> 3.2.0.beta'
 
 gem 'spree_digital', github: 'spree-contrib/spree_digital'
+gem 'spree_editor', github: 'spree-contrib/spree_editor'
